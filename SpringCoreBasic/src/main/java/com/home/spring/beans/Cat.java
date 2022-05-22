@@ -19,8 +19,7 @@ public class Cat implements InitializingBean, DisposableBean, BeanNameAware {
     }
 
     public Cat(Person owner) {
-        System.out.println("Cat object created with constructor with owner = "
-                + owner);
+        System.out.println("Cat object created with constructor with owner = " + owner);
         this.owner = owner;
     }
 
@@ -47,13 +46,11 @@ public class Cat implements InitializingBean, DisposableBean, BeanNameAware {
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("InitializingBean's afterPropertiesSet() method called for Cat for bean= " + beanName);
-
     }
 
     @Override
     public void destroy() throws Exception {
         System.out.println("DisposableBean's destroy method called for Cat for bean= " + beanName);
-
     }
 
     public void myInit() {

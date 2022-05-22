@@ -251,7 +251,7 @@ public class TestSpringProject {
     @Test
     public void testBeanInitializationAndDestruction() {
         System.out.println("Test case testBeanInitializationAndDestruction begins........ ");
-        System.out.println("Observe the cat initalization and destruction method flow");
+        System.out.println("Observe the cat Initialization and destruction method flow");
         context.getBean("initDestroyCat", Cat.class);
         System.out.println("Closing the context in the test case testBeanInitializationAndDestruction");
         context.close();

@@ -10,10 +10,8 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 
     @Override
-    public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory)
-            throws BeansException {
+    public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory)  throws BeansException {
         System.out.println("MyBeanFactoryPostProcessor ran and the beanPostProcessorCount is " + beanFactory.getBeanPostProcessorCount());
-
     }
 
 }
