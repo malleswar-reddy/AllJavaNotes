@@ -1,6 +1,6 @@
 #This project covers basic core spring concepts
 
-###### Concepts Covered
+## _Concepts Covered_
 
 ###### 1) <a href="#1">Dependency injection by setter methods</a> 
 ###### 2) <a href="#2">Dependency injection by constructor</a> 
@@ -36,7 +36,17 @@
 
 
 * *Note: Run individual test cases instead of running all the test cases together to understand better. Comment non related bean definitions in spring.xml so that you will not get confused when other beans get loaded in spring container. Test case name is mentioned on top of the bean definitions which are required for that particular test case to run properly so make sure to uncomment all the bean definitions required for that test case, so please search the spring.xml from top to bottom before running the test case.*  
- 
+
+<div id="1"> </div>
+    <!--Setter Injection bean -->
+    <!--testSetterInjection -->
+    <bean id="dog" class="com.home.spring.beans.Dog">
+        <property name="name" value="Haiku"/>
+        <property name="age" value="1"/>
+    </bean>
+
+  
+
 
  
 
